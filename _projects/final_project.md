@@ -10,10 +10,13 @@ This visualization explores retail business registrations in Iowa. It allows use
 <div id="vis"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-<script type="text/javascript">
-  var spec = "/assets/json/final_dashboard.json";
-  vegaEmbed('#vis', spec);
+<script>
+
+vegaEmbed('#vis', "/assets/json/final_dashboard.json");
+
 </script>
