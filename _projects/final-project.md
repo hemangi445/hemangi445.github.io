@@ -10,7 +10,7 @@ custom_js:
   - justcharts
 ---
 
-**Hemangi Sanjay Chaudhari**
+**Author: Hemangi Sanjay Chaudhari**
 
 ---
 
