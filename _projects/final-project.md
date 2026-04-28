@@ -9,24 +9,24 @@ custom_js:
   - vega-embed.min
   - justcharts
 ---
+**Hemangi Sanjay Chaudhari**
+---
 
 ## Overview
-
-**Hemangi Sanjay Chaudhari**
 
 This project explores how many businesses are registered across different counties in Iowa and how those numbers relate to population. The first visualization is an interactive dashboard that compares active and inactive businesses and shows how registrations have changed over time. The next two visualizations provide more context by showing which counties have the highest number of registered businesses and how population might explain those patterns.
 
 ---
 
-## Visualization 1
+## Active vs Inactive Businesses and Registration Trends
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/final_dashboard.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/final_dashboard.json" style="width: 80%"></vegachart>
 
 This interactive dashboard shows the difference between active and inactive businesses in Iowa and how business registrations have changed over time. The bar chart compares the total number of active and inactive businesses, while the line chart shows how registrations change year by year. Color is used to clearly separate business status, and position is used to represent the number of businesses. The date column was cleaned and converted into a year format in Python so that the trend over time could be displayed clearly. Users can click on a business status (Active or Inactive) to filter the line chart. This helps them focus on one category at a time and better understand how registrations change.
 
 ---
 
-## Visualization 2
+##  Top Iowa Counties by Business Registrations
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/context_business_count.json" style="width: 100%"></vegachart>
 
@@ -34,7 +34,7 @@ This chart shows the top 15 counties in Iowa based on the number of registered b
 
 ---
 
-## Visualization 3
+## Top Iowa Counties by Population
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/context_population.json" style="width: 100%"></vegachart>
 
@@ -57,3 +57,14 @@ The dashboard includes interactive filtering. When a user clicks on a business s
 <div class="right">
 {% include elements/button.html link="https://github.com/hemangi445/hemangi445.github.io/blob/main/python_notebooks/final_project.ipynb" text="The Analysis" %}
 </div>
+
+---
+## Sources
+
+The visualizations in this project were created by the author using the following datasets:
+
+- Iowa Retail Business Registrations dataset - https://catalog.data.gov/dataset/retail-sales-and-retail-use-business-registrations?from_hint=eyJxIjoicmV0YWlsIHNhbGVzIiwic29ydCI6InJlbGV2YW5jZSJ9
+  
+- U.S. Census population dataset: https://data.census.gov/table?q=B01003&g=040XX00US19%240500000 
+
+All data cleaning, processing, and visualizations were performed by the author using Python (pandas) and Altair.
