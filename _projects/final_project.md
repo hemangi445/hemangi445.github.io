@@ -1,14 +1,20 @@
 ---
 layout: project
 title: "Iowa Business Registrations and Population"
-description: "An interactive data story about Iowa retail business registrations and county population."
+description: "Interactive dashboard showing business activity across Iowa counties with population context."
+img: /assets/pngs/final_project_preview.png
 importance: 1
 category: IS445
+tags: [Python, Altair, Vega-Lite]
 ---
 
 ## Overview
 
-This project explores retail business registrations in Iowa and compares them with county population. The goal is to understand where business activity is concentrated and whether larger counties also tend to have more business registrations.
+**Author:** Hemangi Sanjay Chaudhari  
+
+This project explores retail business registrations in Iowa and how they relate to county population. It combines an interactive dashboard with supporting visualizations to provide both trends and context.
+
+---
 
 ## Interactive Dashboard
 
@@ -22,9 +28,12 @@ This project explores retail business registrations in Iowa and compares them wi
 vegaEmbed('#vis', "/assets/json/final_dashboard.json");
 </script>
 
-This dashboard compares active and inactive businesses and shows how registrations changed over time. When a user clicks **Active** or **Inactive** in the bar chart, the line chart updates to show the trend for that selected business status. This makes it easier to move from a general summary to a more specific trend.
+**Description**  
+This dashboard compares active and inactive businesses and shows how registrations have changed over time. Active businesses are significantly higher, and there is a noticeable increase after 2015. Users can click on a business status to filter the trend and explore patterns more clearly.
 
-## Context Visualization 1
+---
+
+## Top Counties by Business Registrations
 
 <div id="vis2"></div>
 
@@ -32,9 +41,12 @@ This dashboard compares active and inactive businesses and shows how registratio
 vegaEmbed('#vis2', "/assets/json/context_business_count.json");
 </script>
 
-This chart shows the top 15 Iowa counties by business registrations. Polk County has the highest number of business registrations, followed by Linn and Scott. The color also shows population, so the chart connects business activity with county size.
+**Description**  
+This chart highlights the counties with the highest number of business registrations. Polk County stands out, followed by Linn and Scott. The color represents population, showing that more populated counties tend to have more businesses.
 
-## Context Visualization 2
+---
+
+## Top Counties by Population
 
 <div id="vis3"></div>
 
@@ -42,11 +54,16 @@ This chart shows the top 15 Iowa counties by business registrations. Polk County
 vegaEmbed('#vis3', "/assets/json/context_population.json");
 </script>
 
-This chart shows the top 15 Iowa counties by population. Polk County also has the highest population, which helps explain why it has the most business registrations. Comparing this chart with the business registration chart gives extra context for the story.
+**Description**  
+This chart shows the most populated counties in Iowa. Polk County has the highest population, which aligns with its high number of business registrations. This suggests that population size influences business activity.
+
+---
 
 ## Interactivity
 
-The main dashboard includes interactive filtering. Selecting a business status in the first chart changes the trend chart on the right, so users can explore active and inactive businesses separately. The charts also include tooltips, so users can hover over marks to see exact values.
+The dashboard includes interactive filtering. Selecting a category (Active or Inactive) updates the time-series chart, allowing users to explore trends dynamically. Tooltips also provide detailed values when hovering over the charts.
+
+---
 
 ## Data & Methods
 
