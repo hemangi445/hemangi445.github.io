@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Iowa Business Registrations and Population"
-description: "Interactive dashboard showing business activity across Iowa counties with population context."
+description: "Business activity across Iowa counties with population context."
 img: /assets/pngs/final_project_preview.png
 importance: 1
 category: IS445
