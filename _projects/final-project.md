@@ -2,7 +2,7 @@
 layout: project
 title: "Iowa Business & Population Analysis"
 description: "Business activity across Iowa counties with population context."
-image: /assets/pngs/final_project_preview.png
+img: /assets/pngs/final_project_preview.png
 importance: 1
 category: IS445
 tags: [Python, Altair, Vega-Lite]
