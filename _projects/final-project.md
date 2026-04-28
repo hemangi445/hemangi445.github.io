@@ -2,7 +2,7 @@
 name: Iowa Business & Population Analysis
 tools: [Python, Altair, Vega-Lite]
 image: assets/pngs/final_project_preview.png
-description: Business activity across Iowa counties with population context.
+description: Business registrations across Iowa counties and how they relate to population.
 custom_js:
   - vega.min
   - vega-lite.min
@@ -12,31 +12,59 @@ custom_js:
 
 ## Overview
 
-**Author:** Hemangi Sanjay Chaudhari  
+**Hemangi Sanjay Chaudhari**
 
-This project explores Iowa retail business registrations and county population data. The first visualization is an interactive dashboard that compares active and inactive businesses and shows how registrations changed over time. The second and third visualizations add population context by comparing top counties by business registrations and population.
+This project explores how many businesses are registered across different counties in Iowa and how those numbers relate to population.
+
+The first visualization is an interactive dashboard that compares active and inactive businesses and shows how registrations have changed over time. The next two visualizations provide more context by showing which counties have the highest number of registered businesses and how population might explain those patterns.
+
+---
 
 ## Visualization 1
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/final_dashboard.json" style="width: 100%"></vegachart>
 
-This interactive dashboard compares active and inactive businesses in Iowa. The bar chart shows the total number of businesses by status, and the line chart shows how registrations changed over time. I used position to encode the count of businesses and color to separate active and inactive businesses. I also converted the permit issue date into a year column in Python so the yearly trend could be plotted clearly.
+This interactive dashboard shows the difference between active and inactive businesses in Iowa and how business registrations have changed over time.
+
+The bar chart compares the total number of active and inactive businesses, while the line chart shows how registrations change year by year. Color is used to clearly separate business status, and position is used to represent the number of businesses.
+
+The date column was cleaned and converted into a year format in Python so that the trend over time could be displayed clearly.
+
+Users can click on a business status (Active or Inactive) to filter the line chart. This helps them focus on one category at a time and better understand how registrations change.
+
+---
 
 ## Visualization 2
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/context_business_count.json" style="width: 100%"></vegachart>
 
-This visualization shows the top 15 Iowa counties by business registrations. I used a horizontal bar chart because county names are easier to read this way. The x-axis shows the number of businesses, the y-axis shows county names, and color represents population. This helps show that counties with larger populations often have more business registrations.
+This chart shows the top 15 counties in Iowa based on the number of registered businesses.
+
+A horizontal bar chart is used because it makes county names easier to read. The length of each bar represents the number of businesses, and color represents population.
+
+This makes it easier to see that counties with larger populations tend to have more businesses. Polk County stands out as having the highest number of registered businesses.
+
+---
 
 ## Visualization 3
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/context_population.json" style="width: 100%"></vegachart>
 
-This visualization shows the top 15 Iowa counties by population. This chart gives context for the business registration chart because population size can help explain why some counties have more businesses. Polk County has the highest population and also appears as the top county for business registrations.
+This chart shows the top 15 counties in Iowa by population.
+
+It helps explain the results from the previous chart by showing that counties with higher populations also tend to have more registered businesses. Counties like Polk and Linn appear at the top in both charts.
+
+The simple bar chart design makes it easy to compare population across counties.
+
+---
 
 ## Interactivity
 
-The first visualization includes interactivity. When a user selects Active or Inactive in the bar chart, the line chart updates to show the registration trend for that selected business status. This makes the dashboard more useful because the viewer can move from a general comparison to a more specific trend without needing separate charts.
+The dashboard includes interactive filtering. When a user clicks on a business status, the line chart updates to show trends only for that category.
+
+This makes the visualization more useful because users can explore the data in more detail instead of viewing everything at once. Tooltips also appear when hovering over the charts to show exact values.
+
+---
 
 ## Search The Data & Methods
 
