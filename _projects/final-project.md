@@ -64,7 +64,7 @@ This chart shows the top 15 counties in Iowa by population. It helps explain the
 
 <br>
 
-This map adds geographic context to the analysis by showing how business registrations are distributed across Iowa counties. Darker counties represent higher numbers of registered businesses, making it easier to see where business activity is concentrated across the state.
+This map adds geographic context to the analysis by showing how business registrations are distributed across Iowa counties. Darker counties represent higher numbers of registered businesses, making it easier to identify where business activity is concentrated across the state. Counties such as Polk and Linn appear darker because they contain larger populations and stronger economic activity compared to smaller rural counties. The map helps users quickly compare regional differences across Iowa and better understand how geography and population are connected to business growth. It also complements the previous bar charts by presenting the same information in a geographic format, allowing viewers to more easily recognize patterns across different parts of the state.
 
 ---
 
