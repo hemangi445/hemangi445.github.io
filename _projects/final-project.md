@@ -55,6 +55,19 @@ This chart shows the top 15 counties in Iowa based on the number of registered b
 This chart shows the top 15 counties in Iowa by population. It helps explain the results from the previous chart by showing that counties with higher populations also tend to have more registered businesses. Counties like Polk and Linn appear at the top in both charts. The simple bar chart design makes it easy to compare population across counties.
 
 ---
+---
+
+## Business Registrations Across Iowa Counties
+
+<br>
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/iowa_county_map.json" style="width: 80%; margin: auto;"></vegachart>
+
+<br>
+
+This map adds geographic context to the analysis by showing how business registrations are distributed across Iowa counties. Darker counties represent higher numbers of registered businesses, making it easier to see where business activity is concentrated across the state.
+
+---
 
 ## Interactivity
 
